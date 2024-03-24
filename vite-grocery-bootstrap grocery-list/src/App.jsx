@@ -83,6 +83,9 @@ const App = () => {
             value={item.completed}
             checked={item.completed}
             />
+          <p>
+            {item.name} {item.quantity > 1 && <span>x{item.quantity}</span>}
+          </p>
             </div>
 
             <input
